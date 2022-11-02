@@ -1,0 +1,36 @@
+@use    'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: variables.$font-stack
+
+html
+     scroll-behavior: smooth
+body
+   
+    background-color: variables.$body-bg-color
+
+    a, svg
+        transition: 4s
+
+/* width */
+::-webkit-scrollbar  
+  width: .4rem 
+ 
+
+/* Track */
+::-webkit-scrollbar-track  
+  background: variables.$text-color-secondary
+ 
+
+/* Handle */
+::-webkit-scrollbar-thumb  
+  background: variables.$gradient
+ 
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+  background: #21038c 
+ 
