@@ -15,7 +15,12 @@ import { BsBootstrapFill } from "react-icons/bs";
 import "../styles/components/technologiescontainer.sass";
 
 const technologies = [
-  { id: "html", name: "HTML5", icon: <DiHtml5 />, description: "Html é vida" },
+  {
+    id: "html",
+    name: "HTML5",
+    icon: <DiHtml5 />,
+    description: "Linguagem de marcação de texto baseada em tags.",
+  },
   {
     id: "css",
     name: "CSS3",
