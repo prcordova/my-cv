@@ -43,13 +43,13 @@ const technologies = [
     id: "react",
     name: "React",
     icon: <DiReact />,
-    description: "React pra sempre !",
+    description: "Biblioteca Javascript.",
   },
   {
     id: "sass",
     name: "sass",
     icon: <DiSass />,
-    description: "Biblioteca Javascript.",
+    description: "Linguagem de extensão CSS",
   },
   {
     id: "tailwind",
@@ -67,7 +67,7 @@ const technologies = [
     id: "bootstrap",
     name: "Bootstrap",
     icon: <BsBootstrapFill />,
-    description: "React pra sempre !",
+    description: "Framework CSS",
   },
   {
     id: "typescript",
