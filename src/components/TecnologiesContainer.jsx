@@ -8,7 +8,7 @@ import {
   DiSass,
   DiReact,
 } from "react-icons/di";
-import {CgFigma} from 'react-icons/cg'
+import { CgFigma } from "react-icons/cg";
 import { AiFillGithub, AiOutlineFileMarkdown } from "react-icons/ai";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
@@ -16,18 +16,23 @@ import "../styles/components/technologiescontainer.sass";
 
 const technologies = [
   { id: "html", name: "HTML5", icon: <DiHtml5 />, description: "Html é vida" },
-  { id: "css", name: "CSS3", icon: <DiCss3 />, description: "CSS is Awesome" },
+  {
+    id: "css",
+    name: "CSS3",
+    icon: <DiCss3 />,
+    description: "Cascading Style Sheets",
+  },
   {
     id: "js",
     name: "JavaScript",
     icon: <DiJsBadge />,
-    description: "JS é a melhor loucura",
+    description: "Linguagem de primeira classe.",
   },
   {
     id: "node",
     name: "Node.js",
     icon: <DiNodejsSmall />,
-    description: "Node é massinha",
+    description: "Server side JS",
   },
   {
     id: "react",
@@ -39,19 +44,19 @@ const technologies = [
     id: "sass",
     name: "sass",
     icon: <DiSass />,
-    description: "React pra sempre !",
+    description: "Biblioteca Javascript.",
   },
   {
     id: "tailwind",
     name: "Tailwind CSS",
     icon: <SiTailwindcss />,
-    description: "React pra sempre !",
+    description: "Framework CSS.",
   },
   {
     id: "github",
     name: "Github",
     icon: <AiFillGithub />,
-    description: "React pra sempre !",
+    description: "Plataforma de código fonte.",
   },
   {
     id: "bootstrap",
@@ -63,19 +68,19 @@ const technologies = [
     id: "typescript",
     name: "TypeScript",
     icon: <SiTypescript />,
-    description: "React pra sempre !",
+    description: "Linguagem fortemente tipada com base em JS.",
   },
   {
     id: "markdown",
     name: "Markdown",
     icon: <AiOutlineFileMarkdown />,
-    description: "React pra sempre !",
+    description: "Linguagem de marcação simples.",
   },
   {
     id: "figma",
     name: "Figma",
     icon: <CgFigma />,
-    description: "React pra sempre !",
+    description: "Editor de gráficos vetoriais.",
   },
 ];
 const TecnologiesContainer = () => {
