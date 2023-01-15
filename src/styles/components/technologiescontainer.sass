@@ -8,6 +8,10 @@
         display: flex
         flex-wrap: wrap
         gap: 1.5rem
+        @media (max-width: 840px)
+            display: grid
+            flex-direction: column
+            background-color: tomato
 
         .technology-card
             @include mixins.center
@@ -16,8 +20,8 @@
             border: 1px solid #333
             width: 45%
             overflow: hidden
-            
 
+                width: 100%
             h3
                 color: variables.$text-color
                 margin-bottom: 1rem
@@ -46,7 +50,7 @@
                 color: #61dafb
         #tailwind
             svg
-                color:  #61dafb
+                color: #61dafb
         #bootstrap
             svg
                 color: #b43add
