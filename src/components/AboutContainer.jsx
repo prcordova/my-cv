@@ -3,12 +3,16 @@ import React from "react";
 const AboutContainer = () => {
   return (
     <section className="about-container">
-      <h2>Sobre</h2>
-      <p>Desenvolvedor focado em Frontend, amante de código, jogos e café !</p>
+      <h2>About</h2>
+      <p>Frontend</p>
 
       <p>
-        Atuando nos últimos 2 anos no desenvolvimento web frontend, utilizando as
-        melhores tecnologias e práticas do mercado.
+        As a dedicated Frontend Developer with several years of experience, I
+        have honed my expertise in a variety of technologies, including React,
+        SCSS, JavaScript, Node.js, and more. My previous roles at companies such
+        as Betalabs, Paipe, FireDev, and GOL Airlines have provided me with
+        valuable exposure to diverse projects and environments, allowing me to
+        develop strong problem-solving abilities and collaborative skills.
       </p>
     </section>
   );
