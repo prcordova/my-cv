@@ -6,12 +6,15 @@
 
     .technologies-grid
         display: flex
+        align-items: center
+        justify-content: center
+        justify-items: center
         flex-wrap: wrap
         gap: 1.5rem
-        @media (max-width: 840px)
+
+        @media (max-width: 700px)
             display: grid
-            flex-direction: column
-            background-color: tomato
+            grid-template-columns: repeat(1, 1fr)
 
         .technology-card
             @include mixins.center
@@ -19,9 +22,10 @@
             padding: 1rem
             border: 1px solid #333
             width: 45%
+            min-width: 240px
             overflow: hidden
+            min-height: 150px
 
-                width: 100%
             h3
                 color: variables.$text-color
                 margin-bottom: 1rem

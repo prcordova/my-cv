@@ -7,8 +7,15 @@
 
     .projects-grid
         display: flex
+        align-items: center
+        justify-content: center
+        justify-items: center
         flex-wrap: wrap
         gap: 1.5rem
+
+        @media (max-width: 700px)
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
 
         .project-card
             @include mixins.center
@@ -16,6 +23,12 @@
             padding: 1rem
             border: 1px solid #333
             width: 45%
+            min-width: 240px
+            overflow: hidden
+            min-height: 250px
+            display: flex
+            align-items: center
+            justify-content: center
             overflow: hidden
 
             h3
