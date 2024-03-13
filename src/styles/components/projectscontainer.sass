@@ -5,6 +5,21 @@
     margin-top: 4rem
     margin-bottom: 1rem
 
+    .select-container
+        display: flex
+        padding: 32px 4rem
+        background-color: variables.$gradient
+        justify-content: right
+        align-items: center
+        width: 100%
+
+        select
+            padding: 1rem
+            font-size: 1.5rem
+            border: 1px solid #333
+            border-radius: 5px
+            margin-right: 1rem
+
     .projects-grid
         display: flex
         align-items: center
@@ -21,6 +36,7 @@
             @include mixins.center
             gap: 1rem
             padding: 1rem
+            padding-left: 5rem
             border: 1px solid #333
             width: 45%
             min-width: 240px
@@ -28,7 +44,7 @@
             min-height: 250px
             display: flex
             align-items: center
-            justify-content: center
+            justify-content: left
             overflow: hidden
 
             h3

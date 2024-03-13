@@ -8,11 +8,14 @@ import {
   DiSass,
   DiReact,
 } from "react-icons/di";
+import { SiNextdotjs } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { AiFillGithub, AiOutlineFileMarkdown } from "react-icons/ai";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
 import "../styles/components/technologiescontainer.sass";
+import { useTranslation } from "react-i18next";
+import { SiNestjs } from "react-icons/si";
 
 const technologies = [
   {
@@ -87,11 +90,19 @@ const technologies = [
     icon: <CgFigma />,
     description: "3 year of experience with Figma for developers",
   },
+  {
+    id: "next",
+    name: "NextJS",
+    icon: <SiNextdotjs />,
+    description: "1 year of experience with NextJS",
+  },
 ];
 const TecnologiesContainer = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="technologies-container">
-      <h2>Tecnologias</h2>
+      <h2>{t("technologies")}</h2>
       <div className="technologies-grid">
         {technologies.map((tech) => (
           <div className="technology-card" id={tech.id} key={tech.id}>

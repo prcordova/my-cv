@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/components/projectscontainer.sass";
 import { RiMedal2Line } from "react-icons/ri";
 const ProjectsContainer = () => {
@@ -84,12 +84,31 @@ const ProjectsContainer = () => {
       icon: <RiMedal2Line />,
     },
   ];
+  const [order, setOrder] = useState("asc");
 
+  const sortedProjects = [...projects].sort((a, b) => {
+    if (order === "asc") {
+      return a.name.localeCompare(b.name);
+    } else if (order === "desc") {
+      return b.name.localeCompare(a.name);
+    }
+    return 0;
+  });
+
+  const changeOrder = (newOrder) => {
+    setOrder(newOrder);
+  };
   return (
     <section className="projects-container">
       <h2>Projetos </h2>
+      <div className="select-container">
+        <select onChange={(e) => changeOrder(e.target.value)}>
+          <option value="asc">Order A-Z</option>
+          <option value="desc">Order Z-A</option>
+        </select>
+      </div>
       <div className="projects-grid">
-        {projects.map((project) => (
+        {sortedProjects.map((project) => (
           <div className="project-card" id={project.id} key={project.id}>
             {project.icon}
             <div className="project-info">
