@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../styles/components/header.sass";
+import "./header.sass";
 
 const Header = () => {
   const [language, setLanguage] = useState(true);

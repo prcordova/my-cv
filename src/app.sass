@@ -1,12 +1,9 @@
-@use '../variables'
-
-#header
+@use './styles/variables'
+@use './styles/mixins'
+#portfolio
     display: flex
     flex-wrap: wrap
-    width: 100%
-    justify-content: right
-    align-items: right
-
+    padding: 3rem
     gap: 3rem
 
     h1
@@ -16,3 +13,9 @@
         background: variables.$gradient
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+.flag-icon
+    width: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%

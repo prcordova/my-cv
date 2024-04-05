@@ -13,9 +13,10 @@ import { CgFigma } from "react-icons/cg";
 import { AiFillGithub, AiOutlineFileMarkdown } from "react-icons/ai";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
-import "../styles/components/technologiescontainer.sass";
+import "./technologiescontainer.sass";
 import { useTranslation } from "react-i18next";
 import { SiNestjs } from "react-icons/si";
+import { Title } from "./Title";
 
 const technologies = [
   {
@@ -102,7 +103,7 @@ const TecnologiesContainer = () => {
 
   return (
     <section className="technologies-container">
-      <h2>{t("technologies")}</h2>
+      <Title>{t("technologies")}</Title>
       <div className="technologies-grid">
         {technologies.map((tech) => (
           <div className="technology-card" id={tech.id} key={tech.id}>

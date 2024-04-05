@@ -1,5 +1,5 @@
-@use '../variables'
-@use '../mixins'
+@use '../styles/variables'
+@use '../styles/mixins'
 
 .technologies-container
     margin-bottom: 1rem
@@ -25,6 +25,8 @@
             min-width: 240px
             overflow: hidden
             min-height: 150px
+            @media (max-width: 700px)
+                width: 100%
 
             h3
                 color: variables.$text-color

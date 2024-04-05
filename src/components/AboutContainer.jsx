@@ -1,12 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Title } from "./Title";
 
 const AboutContainer = () => {
   const { t } = useTranslation();
 
   return (
     <section className="about-container">
-      <h2>{t("about")}</h2>
+      <Title>{t("about")}</Title>
       <p>
         {t("role")} <span>Frontend</span>
       </p>

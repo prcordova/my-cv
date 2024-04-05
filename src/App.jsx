@@ -2,9 +2,11 @@ import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Sidebar from "./components/Sidebar";
 import { useTranslation } from "react-i18next";
-import "./styles/components/header.sass";
+import "./components/header.sass";
 import { useState } from "react";
-import "./styles/components/app.sass";
+import "./app.sass";
+import US from "country-flag-icons/react/3x2/US";
+import BR from "country-flag-icons/react/3x2/BR";
 
 function App() {
   const {
@@ -24,10 +26,14 @@ function App() {
     <div id="portfolio">
       <header id="header">
         <button onClick={handleChangeLanguage} id="header-btn">
-          {currentLanguage === "en" ? "EN" : "PT"}
+          {currentLanguage === "en" ? (
+            <US title="United States" className="flag-icon" />
+          ) : (
+            <BR title="Brazil" className="flag-icon" />
+          )}
         </button>
       </header>
-      <h1>Pedro Ricardo Oliveira Córdova</h1>
+      <h1>Pedro Ricardo Córdova</h1>
       <Sidebar />
       <MainContent />
     </div>
