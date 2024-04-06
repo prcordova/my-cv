@@ -52,7 +52,7 @@ const ProjectsContainer = () => {
     },
     {
       id: "calculadorareact",
-      name: "Calculadora",
+      name: "ReactCalculator",
       description: "Calculator in ReactJS",
       link: "https://github.com/prcordova/calculadoraReactJS",
       img: "/",
