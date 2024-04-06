@@ -16,88 +16,94 @@ const ProjectsContainer = () => {
       link: "https://github.com/prcordova/procFLix",
       img: "/",
       icon: <RiMedal2Line />,
-      usedTechs: ["React", "Node", "MongoDB"],
+      usedTechs: ["React, Node, MongoDB, CSS, HTML", "Javascript , bootstrap"],
+      details: [
+        "This project was developed during the Fullstack Bootcamp.",
+        "The project is a Netflix clone.",
+        "The project was developed in React.",
+      ],
     },
-    {
-      id: "crud",
-      name: "Crud em NextJS",
-      description: "CRUD em NextJS",
-      link: "https://github.com/prcordova/next-crud",
-      img: "/",
-      icon: <RiMedal2Line />,
-      usedTechs: ["NextJS", "MongoDB"],
-    },
+
     {
       id: "pacientes",
-      name: "CRUD de pacientes",
-      description: "Lista de pacientes",
+      name: "PatientList",
+      description: "A few CRUD operations in React",
       link: "https://github.com/prcordova/challenge-interprocess-crud",
       img: "/",
       icon: <RiMedal2Line />,
-      usedTechs: ["React", "Node", "MongoDB"],
+      usedTechs: ["React, Node, MongoDB, CSS, HTML", "Javascript , bootstrap"],
+
+      details: [
+        "This project is an complete system of an hospital i created for a challenge.",
+      ],
     },
     {
       id: "maskinputs",
-      name: "Mask inputs",
+      name: "Global Mask Input",
       description: "Typescript input mask",
       link: "https://github.com/prcordova/react-input-mask",
       img: "/",
       icon: <RiMedal2Line />,
-      usedTechs: ["React", "Typescript"],
+      usedTechs: ["React, html, CSS, Typescript"],
+      details: [
+        "Developed a new feature that solves a problem with the mask input.",
+        "The feature was developed in Typescript and ReactJS.",
+      ],
     },
     {
       id: "calculadorareact",
       name: "Calculadora",
-      description: "Uma calculadora em React",
+      description: "Calculator in ReactJS",
       link: "https://github.com/prcordova/calculadoraReactJS",
       img: "/",
       icon: <RiMedal2Line />,
-      usedTechs: ["React"],
+      usedTechs: ["React, html, CSS, Javascript"],
+      details: [
+        "Calculator developed in ReactJS.",
+        "This project has on purpose to practice my skills in ReactJS.",
+      ],
     },
     {
       id: "flappybird",
-      name: "Flappybird em JS",
-      description: "Um Jogo em JS",
+      name: "Flappybird in JS",
+      description: "An Incredible game in Javascript",
       link: "https://github.com/prcordova/flappyBird",
       img: "/",
       icon: <RiMedal2Line />,
-      usedTechs: ["Javascript", "HTML", "CSS"],
+      usedTechs: ["Javascript , HTML, CSS"],
+      details: [
+        "This is a game developed in Javascript.",
+        "The game was developed to practice my skills in Javascript.",
+      ],
     },
-    {
-      id: "horadodia",
-      name: "Hora atual",
-      description: "Mostra a hora",
-      link: "https://github.com/prcordova/Horadodia",
-      img: "/",
-      icon: <RiMedal2Line />,
-      usedTechs: ["Javascript", "HTML", "CSS"],
-    },
+
     {
       id: "questionarioflutter",
-      name: "Questionário",
-      description: "Questionário em flutter",
+      name: "QuizFlutter",
+      description: "Quiz game in Flutter",
       link: "https://github.com/prcordova/questionario-em-flutter",
       img: "/",
       icon: <RiMedal2Line />,
-      usedTechs: ["Flutter", "Dart"],
+      usedTechs: ["Flutter, Dart"],
+      details: [
+        "This project was developed in Flutter.",
+        "The project is a quiz game.",
+      ],
     },
     {
-      id: "despesas",
-      name: "Despesas pessoais",
-      description: "controle de gastos",
+      id: "Expenses",
+      name: "Expenses",
+      description: "Expenses control in ReactJS",
       link: "https://github.com/prcordova/despesas-pessoais",
       img: "/",
       icon: <RiMedal2Line />,
-      usedTechs: ["React", "Typescript", "CSS", "HTML", "Javascript"],
-    },
-    {
-      id: "portfolioantigo",
-      name: "Porfólio em bootstrap",
-      description: "Portfólio antigo, mas funcional.",
-      link: "https://github.com/prcordova/portfolio-repositorios",
-      img: "/",
-      icon: <RiMedal2Line />,
-      usedTechs: ["Bootstrap", "HTML", "CSS", "Javascript"],
+      usedTechs: [
+        "React, Typescript, CSS, HTML, Javascript, typescript, tailwindcss",
+      ],
+      details: [
+        "This project was developed in ReactJS.",
+        "The project is a expenses control.",
+      ],
     },
   ];
   const [order, setOrder] = useState("asc");
@@ -144,11 +150,22 @@ const ProjectsContainer = () => {
                 headerTitle={`Tecnologias do projeto ${project.name}`}
                 onRequestClose={() => setOpenModal(null)}
                 onClick={() => setOpenModal(null)}
-                textBtn={"Fechar"}
+                textBtn={t("close")}
               >
-                {project.usedTechs.map((tech) => (
-                  <span key={tech}>{tech}</span>
+                <div className="date-info">
+                  <span>{project?.date}</span>
+                </div>
+                {project.details.map((detail) => (
+                  <span key={detail}>{detail}</span>
                 ))}
+
+                <div className="modal-footer">
+                  <h3>{t("usedTechs")}</h3>
+
+                  {project.usedTechs.map((tech) => (
+                    <span key={tech}>{tech}</span>
+                  ))}
+                </div>
               </CustomModal>
             </div>
             <div className="projects-btns-container">

@@ -14,6 +14,9 @@
     "order-a-z": "Order A-Z",
     "close": "Close",
     "usedTechs": "Used Technologies :",
-    "experiences": "Experiences"
+    "experiences": "Experiences",
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email"
   }
 }
