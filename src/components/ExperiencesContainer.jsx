@@ -153,7 +153,7 @@ const ExperiencesContainer = () => {
 
   return (
     <section className="projects-container">
-      <Title>Experiences</Title>
+      <Title>{t("experiences")}</Title>
       <div className="projects-grid">
         {experiences.map((experience) => (
           <div className="project-card" id={experience.id} key={experience.id}>
