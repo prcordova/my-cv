@@ -27,9 +27,13 @@ function App() {
       <header id="header">
         <button onClick={handleChangeLanguage} id="header-btn">
           {currentLanguage === "en" ? (
-            <US title="United States" className="flag-icon" />
+            <div className="flag-content">
+              <US title="United States" className="flag-icon" />
+            </div>
           ) : (
-            <BR title="Brazil" className="flag-icon" />
+            <div className="flag-content">
+              <BR title="Brazil" className="flag-icon" />
+            </div>
           )}
         </button>
       </header>
