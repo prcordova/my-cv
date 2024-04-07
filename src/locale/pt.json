@@ -5,7 +5,7 @@
     "role": "Cargo",
     "technologies": "Tecnologias",
     "developer": "Desenvolvedor Frontend",
-    "download": "Download CV",
+    "download": "Baixar currículo",
     "details": "Detalhes",
     "website": "Site",
     "github": "GitHub",
@@ -17,6 +17,8 @@
     "experiences": "Experiências",
     "location": "Localização",
     "phone": "Telefone",
-    "email": "Email"
+    "email": "Email",
+    "download-en": "Baixar Currículo em inglês",
+    "download-pt": "Baixar Currículo em Português"
   }
 }

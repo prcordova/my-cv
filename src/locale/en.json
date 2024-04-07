@@ -17,6 +17,8 @@
     "experiences": "Experiences",
     "location": "Location",
     "phone": "Phone",
-    "email": "Email"
+    "email": "Email",
+    "download-en": "Download Resume in English",
+    "download-pt": "Download Resume in Portuguese"
   }
 }

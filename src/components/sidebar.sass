@@ -29,6 +29,7 @@
 
     .btn
         @include mixins.btn
+        width: 100%
 
     @media (max-width: 840px)
         position: static
@@ -38,4 +39,12 @@
             width: 80%
             position: static
         .description
+            margin-top: 1rem
+
+    .download-area
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 1rem
+        .btn
             margin-top: 1rem
