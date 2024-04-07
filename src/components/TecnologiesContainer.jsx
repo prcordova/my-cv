@@ -18,88 +18,95 @@ import { useTranslation } from "react-i18next";
 import { SiNestjs } from "react-icons/si";
 import { Title } from "./Title";
 
-const technologies = [
-  {
-    id: "html",
-    name: "HTML5",
-    icon: <DiHtml5 />,
-    description: "4 years of experience with HTML5",
-  },
-  {
-    id: "css",
-    name: "CSS3",
-    icon: <DiCss3 />,
-    description: "4 years of experience with CSS3",
-  },
-  {
-    id: "js",
-    name: "JavaScript",
-    icon: <DiJsBadge />,
-    description: "3 years of experience with JavaScript",
-  },
-  {
-    id: "node",
-    name: "Node.js",
-    icon: <DiNodejsSmall />,
-    description: "1 year of experience with Node.js",
-  },
-  {
-    id: "react",
-    name: "React",
-    icon: <DiReact />,
-    description: "3 years of experience with React",
-  },
-  {
-    id: "sass",
-    name: "sass",
-    icon: <DiSass />,
-    description: "2 years of experience with Sass",
-  },
-  {
-    id: "tailwind",
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss />,
-    description: "1 year of experience with Tailwind CSS",
-  },
-  {
-    id: "github",
-    name: "Github",
-    icon: <AiFillGithub />,
-    description: "3 years of experience with Github",
-  },
-  {
-    id: "bootstrap",
-    name: "Bootstrap",
-    icon: <BsBootstrapFill />,
-    description: "3 years of experience with Bootstrap",
-  },
-  {
-    id: "typescript",
-    name: "TypeScript",
-    icon: <SiTypescript />,
-    description: "2 year of experience with TypeScript",
-  },
-  {
-    id: "markdown",
-    name: "Markdown",
-    icon: <AiOutlineFileMarkdown />,
-    description: "1 years of experience with Markdown",
-  },
-  {
-    id: "figma",
-    name: "Figma",
-    icon: <CgFigma />,
-    description: "3 year of experience with Figma for developers",
-  },
-  {
-    id: "next",
-    name: "NextJS",
-    icon: <SiNextdotjs />,
-    description: "1 year of experience with NextJS",
-  },
-];
 const TecnologiesContainer = () => {
   const { t } = useTranslation();
+
+  const technologies = [
+    {
+      id: "html",
+      name: "HTML5",
+      icon: <DiHtml5 />,
+      description: t("skills-experiences.html-experience"),
+    },
+    {
+      id: "css",
+      name: "CSS3",
+      icon: <DiCss3 />,
+      description: t("skills-experiences.css-experience"),
+    },
+    {
+      id: "js",
+      name: "JavaScript",
+      icon: <DiJsBadge />,
+      description: t("skills-experiences.js-experience"),
+    },
+    {
+      id: "node",
+      name: "Node.js",
+      icon: <DiNodejsSmall />,
+      description: t("skills-experiences.node-experience"),
+    },
+    {
+      id: "react",
+      name: "React",
+      icon: <DiReact />,
+      description: t("skills-experiences.react-experience"),
+    },
+    {
+      id: "sass",
+      name: "sass",
+      icon: <DiSass />,
+      description: t("skills-experiences.sass-experience"),
+    },
+    {
+      id: "tailwind",
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss />,
+      description: t("skills-experiences.tailwind-experience"),
+    },
+    {
+      id: "github",
+      name: "Github",
+      icon: <AiFillGithub />,
+      description: t("skills-experiences.github-experience"),
+    },
+    {
+      id: "bootstrap",
+      name: "Bootstrap",
+      icon: <BsBootstrapFill />,
+      description: t("skills-experiences.bootstrap-experience"),
+    },
+    {
+      id: "typescript",
+      name: "TypeScript",
+      icon: <SiTypescript />,
+      description: t("skills-experiences.typescript-experience"),
+    },
+    {
+      id: "markdown",
+      name: "Markdown",
+      icon: <AiOutlineFileMarkdown />,
+      description: t("skills-experiences.markdown-experience"),
+    },
+    {
+      id: "figma",
+      name: "Figma",
+      icon: <CgFigma />,
+      description: t("skills-experiences.figma-experience"),
+    },
+    {
+      id: "next",
+      name: "NextJS",
+      icon: <SiNextdotjs />,
+      description: t("skills-experiences.next-experience"),
+    },
+    {
+      id: "zustand",
+      name: "Zustand",
+      icon: <DiReact />,
+      description: t("skills-experiences.zustand-experience"),
+    },
+  ];
 
   return (
     <section className="technologies-container">

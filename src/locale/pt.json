@@ -5,7 +5,6 @@
     "role": "Cargo",
     "technologies": "Tecnologias",
     "developer": "Desenvolvedor Frontend",
-    "download": "Baixar currículo",
     "details": "Detalhes",
     "website": "Site",
     "github": "GitHub",
@@ -18,7 +17,25 @@
     "location": "Localização",
     "phone": "Telefone",
     "email": "Email",
+    "download": "Download Resume in English",
     "download-en": "Baixar Currículo em inglês",
-    "download-pt": "Baixar Currículo em Português"
+    "download-pt": "Baixar Currículo em Português",
+    "skills-experiences": {
+      "html-experience": "4 anos de experiência com HTML5",
+      "css-experience": "4 anos de experiência com CSS3",
+      "js-experience": "4 anos de experiência com JavaScript",
+      "node-experience": "2 anos de experiência com Node.js",
+      "react-experience": "3 anos de experiência com React",
+      "sass-experience": "3 anos de experiência com SCSS",
+      "tailwind-experience": "1 ano de experiência com Tailwind CSS",
+      "github-experience": "4 anos de experiência com Git/GitHub",
+      "bootstrap-experience": "2 anos de experiência com Bootstrap",
+      "typescript-experience": "2 years of experience with TypeScript",
+      "markdown-experience": "2 anos de experiência com Markdown",
+      "figma-experience": "2 anos de experiência com Figma",
+      "next-experience": "1 ano de experiência com Next.js",
+      "zustand-experience": "1 ano de experiência com Zustand",
+      "agile-experience": "3 anos de experiência com Agile methodologies"
+    }
   }
 }

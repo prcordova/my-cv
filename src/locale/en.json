@@ -5,7 +5,6 @@
     "role": "Role",
     "technologies": "Technologies",
     "developer": "Developer",
-    "download": "Download Resume",
     "details": "Details",
     "website": "Website",
     "github": "GitHub",
@@ -18,7 +17,25 @@
     "location": "Location",
     "phone": "Phone",
     "email": "Email",
+    "download": "Download Resume",
     "download-en": "Download Resume in English",
-    "download-pt": "Download Resume in Portuguese"
+    "download-pt": "Download Resume in Portuguese",
+    "skills-experiences": {
+      "html-experience": "4 years of experience with HTML5",
+      "css-experience": "4 years of experience with CSS3",
+      "js-experience": "4 years of experience with JavaScript",
+      "node-experience": "2 years of experience with Node.js",
+      "react-experience": "3 years of experience with React",
+      "sass-experience": "3 years of experience with SCSS",
+      "tailwind-experience": "1 year of experience with Tailwind CSS",
+      "github-experience": "4 years of experience with Git/GitHub",
+      "bootstrap-experience": "2 years of experience with Bootstrap",
+      "typescript-experience": "1 year of experience with TypeScript",
+      "markdown-experience": "2 years of experience with Markdown",
+      "figma-experience": "2 years of experience with Figma",
+      "nextjs-experience": "1 year of experience with Next.js",
+      "zustand-experience": "1 year of experience with Zustand",
+      "agile-experience": "3 years of experience with Agile methodologies"
+    }
   }
 }
