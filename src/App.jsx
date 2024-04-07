@@ -37,7 +37,7 @@ function App() {
           )}
         </button>
       </header>
-      <h1>Pedro Ricardo Córdova</h1>
+      <h1>Pedro Ricardo Oliveira Córdova</h1>
       <Sidebar />
       <MainContent />
     </div>
