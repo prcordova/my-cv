@@ -16,7 +16,7 @@ export function Hero() {
       id="top"
       className="grid-atmosphere relative overflow-hidden border-b border-ink-200/70 dark:border-ink-800"
     >
-      <div className="section-shell grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+      <div className="section-shell grid items-center gap-10 pb-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:pb-10">
         <div className="animate-fade-up min-w-0">
           <h1 className="font-display text-4xl font-semibold tracking-tight text-ink-950 dark:text-ink-50 sm:text-5xl md:text-6xl lg:text-7xl">
             {t("hero.headline")}
@@ -31,42 +31,39 @@ export function Hero() {
             {t("hero.summary")}
           </p>
 
+          {/* Primary actions only — avoid 4 equal-weight buttons */}
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Button href="#experience" variant="primary" className="w-full sm:w-auto">
-              <HiArrowDown />
-              {t("hero.viewWork")}
-            </Button>
             <Button
               href={resume.href}
               download={resume.fileName}
-              variant="secondary"
+              variant="primary"
               className="w-full sm:w-auto"
             >
               <HiDownload />
               {t("hero.downloadResume")}
             </Button>
-            <Button href="#contact" variant="ghost" className="w-full sm:w-auto">
+            <Button href="#contact" variant="secondary" className="w-full sm:w-auto">
               <HiMail />
               {t("hero.contact")}
             </Button>
-            <Button
+          </div>
+
+          <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-ink-500 dark:text-ink-400">
+            <a
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              variant="ghost"
-              className="w-full sm:w-auto"
+              className="inline-flex items-center gap-2 font-medium transition hover:text-accent-muted"
             >
               <FaLinkedinIn />
               {t("hero.linkedin")}
-            </Button>
-          </div>
-
-          <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-ink-500 dark:text-ink-400">
+            </a>
+            <span aria-hidden>•</span>
             <a
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition hover:text-accent-muted"
+              className="inline-flex items-center gap-2 font-medium transition hover:text-accent-muted"
             >
               <FaGithub />
               GitHub
@@ -74,7 +71,9 @@ export function Hero() {
             <span aria-hidden className="hidden sm:inline">
               •
             </span>
-            <span>{isPt ? profile.location.pt : profile.location.en}</span>
+            <span className="w-full sm:w-auto">
+              {isPt ? profile.location.pt : profile.location.en}
+            </span>
           </div>
         </div>
 
@@ -88,6 +87,20 @@ export function Hero() {
             height={800}
           />
         </div>
+      </div>
+
+      {/* Scroll cue — sits on the hero divider, not competing with CTAs */}
+      <div className="flex justify-center pb-6 md:pb-8">
+        <a
+          href="#experience"
+          className="group inline-flex flex-col items-center gap-1.5 rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500 transition hover:text-accent-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-soft dark:text-ink-400 dark:hover:text-accent-soft"
+        >
+          {t("hero.viewWork")}
+          <HiArrowDown
+            className="animate-bounce text-base text-accent-muted transition group-hover:translate-y-0.5 dark:text-accent-soft"
+            aria-hidden
+          />
+        </a>
       </div>
     </section>
   );
