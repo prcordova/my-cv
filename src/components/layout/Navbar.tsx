@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { HiMenuAlt3, HiOutlineMoon, HiOutlineSun, HiX } from "react-icons/hi";
 import { profile } from "@/data/profile";
 import { useTheme } from "@/hooks/useTheme";
+import { persistLocale, type AppLocale } from "@/lib/locale";
 
 const links = [
   "about",
@@ -22,9 +23,9 @@ export function Navbar() {
   const isPt = i18n.language.startsWith("pt");
 
   const toggleLanguage = () => {
-    const next = isPt ? "en" : "pt";
+    const next: AppLocale = isPt ? "en" : "pt";
     void i18n.changeLanguage(next);
-    localStorage.setItem("portfolio-lang", next);
+    persistLocale(next);
   };
 
   return (

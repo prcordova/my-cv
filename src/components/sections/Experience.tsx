@@ -20,20 +20,30 @@ export function Experience() {
           subtitle={t("experience.subtitle")}
         />
 
-        <ol className="relative space-y-8 border-l border-ink-200 pl-6 dark:border-ink-700 md:pl-8">
+        <ol className="relative space-y-8">
+          <span
+            className="absolute bottom-3 left-[7px] top-3 w-px bg-ink-200 dark:bg-ink-700 md:left-[9px]"
+            aria-hidden
+          />
+
           {experiences.map((item) => (
-            <li key={item.id} className="relative">
+            <li key={item.id} className="relative grid grid-cols-[16px_1fr] gap-4 md:grid-cols-[20px_1fr] md:gap-5">
               <span
-                className={`absolute -left-[1.91rem] top-2 h-3.5 w-3.5 rounded-full border-2 md:-left-[2.41rem] ${
+                className={`relative z-10 mt-7 h-3.5 w-3.5 justify-self-center rounded-full border-2 md:mt-8 md:h-4 md:w-4 ${
                   item.current
                     ? "border-accent bg-accent-soft"
                     : "border-ink-300 bg-ink-50 dark:border-ink-500 dark:bg-ink-950"
                 }`}
                 aria-hidden
               />
-              <article className={`surface p-6 md:p-8 ${item.current ? "ring-1 ring-accent/30" : ""}`}>
-                <div className="flex flex-wrap items-start justify-between gap-3">
-                  <div>
+
+              <article
+                className={`surface w-full min-w-0 p-6 md:p-8 ${
+                  item.current ? "ring-1 ring-accent/30" : ""
+                }`}
+              >
+                <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
+                  <div className="min-w-0">
                     <h3 className="font-display text-xl font-semibold text-ink-950 dark:text-ink-50">
                       {item.company}
                     </h3>
@@ -78,7 +88,7 @@ export function Experience() {
                     {item.highlights.map((highlight) => (
                       <li key={highlight} className="flex gap-2">
                         <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                        <span>{highlight}</span>
+                        <span className="min-w-0">{highlight}</span>
                       </li>
                     ))}
                   </ul>
