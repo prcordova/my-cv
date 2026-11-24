@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-50 font-sans text-ink-900 antialiased dark:bg-ink-950 dark:text-ink-100;
+  }
+
+  ::selection {
+    @apply bg-accent/25 text-ink-950 dark:text-ink-50;
+  }
+
+  :focus-visible {
+    @apply outline-none;
+  }
+}
+
+@layer utilities {
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-20;
+  }
+
+  .surface {
+    @apply rounded-2xl border border-ink-200/80 bg-white/80 shadow-soft backdrop-blur dark:border-ink-800 dark:bg-ink-900/70;
+  }
+
+  .grid-atmosphere {
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(20, 184, 166, 0.18), transparent),
+      linear-gradient(to right, rgba(34, 34, 31, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(34, 34, 31, 0.04) 1px, transparent 1px);
+    background-size: auto, 48px 48px, 48px 48px;
+  }
+
+  .dark .grid-atmosphere {
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(20, 184, 166, 0.12), transparent),
+      linear-gradient(to right, rgba(247, 247, 245, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(247, 247, 245, 0.035) 1px, transparent 1px);
+  }
+}

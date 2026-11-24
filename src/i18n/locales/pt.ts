@@ -1,0 +1,110 @@
+export const pt = {
+  translation: {
+    nav: {
+      about: "Sobre",
+      experience: "Experiência",
+      cases: "Cases",
+      products: "Produtos",
+      skills: "Skills",
+      results: "Resultados",
+      education: "Formação",
+      contact: "Contato",
+    },
+    hero: {
+      eyebrow: "Senior Frontend Engineer",
+      headline: "Pedro Cordova",
+      role: "Senior Frontend Engineer",
+      stack: "React · Next.js · TypeScript · Enterprise Software",
+      summary:
+        "Construo aplicações web escaláveis e software enterprise com React, Next.js e TypeScript. Experiência full stack com Node.js e integrações backend.",
+      viewWork: "Ver meu trabalho",
+      downloadResume: "Baixar currículo",
+      contact: "Fale comigo",
+      linkedin: "LinkedIn",
+    },
+    about: {
+      title: "Sobre",
+      subtitle: "Resumo profissional",
+      paragraphs: [
+        "Sou Senior Frontend Engineer com mais de 5 anos de experiência construindo e mantendo aplicações web modernas.",
+        "Minha especialidade principal está em React, Next.js, TypeScript e JavaScript, com experiência adicional em Node.js e desenvolvimento backend.",
+        "Ao longo da carreira, contribui para projetos enterprise nos setores financeiro, bancário, aviação e comércio digital, trabalhando com regras de negócio complexas, arquiteturas frontend escaláveis, integrações de API e aplicações críticas.",
+        "Tenho experiência prática com otimização de performance, testes automatizados, arquitetura de componentes, segurança, CI/CD e manutenibilidade de software.",
+        "Além da experiência profissional, também desenvolvo e mantenho produtos digitais independentes, incluindo plataformas SaaS e marketplaces, cobrindo arquitetura frontend, APIs backend, autenticação, integrações de pagamento e deploy em cloud.",
+        "Gosto de resolver problemas complexos de engenharia e construir software confiável que equilibra qualidade técnica com necessidades de negócio.",
+      ],
+    },
+    experience: {
+      title: "Experiência",
+      subtitle: "Entrega enterprise em finanças, aviação e produtos digitais",
+      clients: "Clientes",
+      highlights: "Destaques",
+      tech: "Tecnologias",
+      current: "Atual",
+    },
+    cases: {
+      title: "Experiência de Engenharia Selecionada",
+      subtitle: "Estudos de caso técnicos de entregas enterprise",
+      context: "Contexto",
+      challenge: "Desafio",
+      contribution: "Contribuição",
+      tech: "Tecnologias",
+      results: "Resultados",
+    },
+    products: {
+      title: "Engenharia de Produtos Independentes",
+      subtitle:
+        "Prática full stack pessoal — estruturada com profundidade sênior, sem inventar nomes de projetos",
+      note: "Trabalho de engenharia pessoal cobrindo preocupações reais de produto como auth, billing, APIs e entrega em cloud. Apps nomeados podem ser adicionados aqui conforme ficarem prontos para o portfólio.",
+    },
+    skills: {
+      title: "Competências Técnicas",
+      subtitle: "Especialização frontend com profundidade full stack complementar",
+      coreNote: "Foco principal: React, Next.js e TypeScript",
+    },
+    results: {
+      title: "Performance & Impacto de Engenharia",
+      subtitle: "Resultados documentados e melhorias qualitativas de entrega",
+      lighthouseLabel: "Lighthouse em páginas críticas",
+      lighthouseFrom: "~20",
+      lighthouseTo: "100",
+      lighthouseNote:
+        "Melhoria documentada em páginas críticas enterprise por meio de otimização de carregamento, renderização e requisições.",
+      qualitative: [
+        "Redução de requisições desnecessárias às APIs",
+        "Melhoria de performance de renderização",
+        "Otimização de caminhos de carregamento",
+        "Maior manutenibilidade com arquitetura reutilizável",
+        "Fortalecimento de qualidade e práticas de cobertura de testes",
+      ],
+    },
+    education: {
+      title: "Formação & Idiomas",
+      subtitle: "Formação acadêmica e comunicação profissional",
+      languages: "Idiomas",
+    },
+    contact: {
+      title: "Contato",
+      subtitle:
+        "Aberto a oportunidades de Senior Frontend / React / Software Engineer",
+      location: "Localização",
+      email: "Email",
+      phone: "Telefone",
+      linkedin: "LinkedIn",
+      github: "GitHub",
+      resumeEn: "Resume (EN)",
+      resumePt: "Currículo (PT)",
+      cta: "Vamos conversar sobre o próximo desafio frontend.",
+    },
+    footer: {
+      rights: "Construído com React, TypeScript e Tailwind CSS.",
+    },
+    a11y: {
+      skip: "Ir para o conteúdo",
+      toggleTheme: "Alternar tema",
+      toggleLanguage: "Alternar idioma",
+      openMenu: "Abrir menu",
+      closeMenu: "Fechar menu",
+    },
+  },
+} as const;

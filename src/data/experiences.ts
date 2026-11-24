@@ -1,0 +1,233 @@
+import type { ExperienceItem } from "@/types/content";
+
+export const experiencesEn: ExperienceItem[] = [
+  {
+    id: "sinqia",
+    company: "Sinqia / Evertec Group",
+    role: "Senior Software Engineer — Frontend / Full Stack",
+    period: "September 2023 – Present",
+    current: true,
+    summary:
+      "Building and evolving enterprise financial systems for large banking clients, with a strong focus on frontend architecture, performance and reliable integrations.",
+    clients: [
+      "Banco do Brasil — National Consortium Platform",
+      "Bradesco — Secondary Market Platform",
+    ],
+    highlights: [
+      "Developed enterprise applications with React, Next.js and TypeScript for complex financial journeys.",
+      "Designed reusable component architecture and frontend patterns for scalable product evolution.",
+      "Integrated REST APIs and collaborated across frontend, backend and database layers.",
+      "Improved critical pages from roughly Lighthouse 20 to 100 through rendering and loading optimizations.",
+      "Reduced unnecessary API calls using React Query, debounce, cache strategies and memoization.",
+      "Wrote and maintained tests with Jest and React Testing Library.",
+      "Worked with SQL Server, T-SQL and stored procedures when investigating and resolving data-related issues.",
+      "Supported Docker, Docker Compose, GHCR, Jenkins and CI/CD release workflows.",
+      "Participated in code reviews, Git workflows and application security practices.",
+    ],
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "React Query",
+      "Jest",
+      "Testing Library",
+      "SQL Server",
+      "Docker",
+      "Jenkins",
+      "CI/CD",
+    ],
+  },
+  {
+    id: "gol",
+    company: "GOL Linhas Aéreas",
+    role: "Frontend Web Developer",
+    period: "January 2023 – October 2023",
+    summary:
+      "Contributed to digital products and customer journeys across the GOL and Smiles ecosystem, with focus on authentication flows, SSR pages and web performance.",
+    highlights: [
+      "Built frontend features for digital products and customer-facing journeys.",
+      "Worked with React, Next.js, TypeScript and JavaScript across product initiatives.",
+      "Implemented authentication flows including login, registration and password recovery.",
+      "Delivered landing pages and homepage experiences using SSR.",
+      "Improved SEO, Core Web Vitals and frontend performance.",
+      "Collaborated on automated testing with Jest and Testing Library, plus CI/CD pipelines.",
+    ],
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "SSR",
+      "Jest",
+      "Testing Library",
+      "CI/CD",
+    ],
+  },
+  {
+    id: "firedev",
+    company: "Firedev IT",
+    role: "Frontend Engineer",
+    period: "January 2022 – December 2022",
+    summary:
+      "Developed frontend applications focused on fraud prevention and user validation, emphasizing reusable UI, secure flows and maintainable architecture.",
+    highlights: [
+      "Built React and TypeScript applications for fraud prevention and user validation.",
+      "Created reusable components with Styled Components.",
+      "Implemented registration, authentication and dashboard experiences.",
+      "Applied security, LGPD and data protection considerations in product flows.",
+      "Improved performance and long-term maintainability of frontend features.",
+    ],
+    tech: [
+      "React",
+      "TypeScript",
+      "Styled Components",
+      "Authentication",
+      "LGPD",
+    ],
+  },
+  {
+    id: "paipe",
+    company: "Paipe",
+    role: "Frontend Engineer",
+    period: "June 2021 – January 2022",
+    summary:
+      "Delivered banking-related frontend experiences with strong attention to forms, dashboards, accessibility and responsive design.",
+    highlights: [
+      "Developed banking application interfaces and operational screens.",
+      "Built dashboards, authentication flows, forms and data tables.",
+      "Worked with React, JavaScript, HTML, CSS and Styled Components.",
+      "Focused on componentization, accessibility and responsive layouts.",
+    ],
+    tech: ["React", "JavaScript", "HTML", "CSS", "Styled Components"],
+  },
+  {
+    id: "betalabs",
+    company: "Betalabs",
+    role: "Frontend Developer Intern",
+    period: "January 2021 – June 2021",
+    summary:
+      "Started professional frontend work building modular templates and reusable UI for CMS-driven digital commerce solutions.",
+    highlights: [
+      "Developed modular templates and reusable frontend components.",
+      "Worked with PHP, Laravel, JavaScript, HTML and CSS.",
+      "Customized layouts and CMS-oriented solutions for client needs.",
+    ],
+    tech: ["PHP", "Laravel", "JavaScript", "HTML", "CSS"],
+  },
+];
+
+export const experiencesPt: ExperienceItem[] = [
+  {
+    id: "sinqia",
+    company: "Sinqia / Evertec Group",
+    role: "Senior Software Engineer — Frontend / Full Stack",
+    period: "Setembro 2023 – Atual",
+    current: true,
+    summary:
+      "Desenvolvimento e evolução de sistemas financeiros corporativos para grandes clientes bancários, com foco em arquitetura frontend, performance e integrações confiáveis.",
+    clients: [
+      "Banco do Brasil — Plataforma Nacional de Consórcios",
+      "Bradesco — Plataforma de Mercado Secundário",
+    ],
+    highlights: [
+      "Desenvolvimento de aplicações corporativas com React, Next.js e TypeScript para jornadas financeiras complexas.",
+      "Implementação de componentes reutilizáveis e arquitetura frontend escalável.",
+      "Integrações com APIs REST e colaboração entre frontend, backend e banco de dados.",
+      "Evolução de páginas críticas de aproximadamente 20 para 100 no Lighthouse.",
+      "Redução de chamadas desnecessárias às APIs com React Query, debounce, cache e memoization.",
+      "Testes com Jest e React Testing Library.",
+      "Atuação com SQL Server, T-SQL e stored procedures na investigação e resolução de problemas.",
+      "Uso de Docker, Docker Compose, GHCR, Jenkins e processos de CI/CD.",
+      "Code review, Git e práticas de segurança de aplicações.",
+    ],
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "React Query",
+      "Jest",
+      "Testing Library",
+      "SQL Server",
+      "Docker",
+      "Jenkins",
+      "CI/CD",
+    ],
+  },
+  {
+    id: "gol",
+    company: "GOL Linhas Aéreas",
+    role: "Frontend Web Developer",
+    period: "Janeiro 2023 – Outubro 2023",
+    summary:
+      "Atuação em produtos digitais e jornadas de clientes no ecossistema GOL e Smiles, com foco em autenticação, SSR e performance web.",
+    highlights: [
+      "Desenvolvimento frontend para produtos digitais e jornadas do cliente.",
+      "Uso de React, Next.js, TypeScript e JavaScript em iniciativas de produto.",
+      "Fluxos de autenticação, login, cadastro e recuperação de senha.",
+      "Landing pages e homepage com SSR.",
+      "SEO, Core Web Vitals e otimização de performance.",
+      "Testes com Jest e Testing Library, além de pipelines de CI/CD.",
+    ],
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "SSR",
+      "Jest",
+      "Testing Library",
+      "CI/CD",
+    ],
+  },
+  {
+    id: "firedev",
+    company: "Firedev IT",
+    role: "Frontend Engineer",
+    period: "Janeiro 2022 – Dezembro 2022",
+    summary:
+      "Desenvolvimento de aplicações frontend voltadas à prevenção a fraudes e validação de usuários, com atenção a componentes reutilizáveis, segurança e manutenção.",
+    highlights: [
+      "Aplicações em React e TypeScript para prevenção a fraudes e validação de usuários.",
+      "Componentes reutilizáveis com Styled Components.",
+      "Fluxos de cadastro, autenticação e dashboards.",
+      "Considerações de segurança, LGPD e proteção de dados.",
+      "Melhoria de performance e manutenibilidade do frontend.",
+    ],
+    tech: [
+      "React",
+      "TypeScript",
+      "Styled Components",
+      "Authentication",
+      "LGPD",
+    ],
+  },
+  {
+    id: "paipe",
+    company: "Paipe",
+    role: "Frontend Engineer",
+    period: "Junho 2021 – Janeiro 2022",
+    summary:
+      "Desenvolvimento de interfaces para aplicações bancárias, com dashboards, formulários, acessibilidade e responsividade.",
+    highlights: [
+      "Interfaces e telas para aplicações bancárias.",
+      "Dashboards, autenticação, formulários e tabelas.",
+      "React, JavaScript, HTML, CSS e Styled Components.",
+      "Componentização, acessibilidade e layouts responsivos.",
+    ],
+    tech: ["React", "JavaScript", "HTML", "CSS", "Styled Components"],
+  },
+  {
+    id: "betalabs",
+    company: "Betalabs",
+    role: "Frontend Developer Intern",
+    period: "Janeiro 2021 – Junho 2021",
+    summary:
+      "Início da trajetória profissional no frontend com templates modulares e UI reutilizável para soluções CMS de comércio digital.",
+    highlights: [
+      "Templates modulares e componentes frontend reutilizáveis.",
+      "PHP, Laravel, JavaScript, HTML e CSS.",
+      "Customização de layouts e soluções orientadas a CMS.",
+    ],
+    tech: ["PHP", "Laravel", "JavaScript", "HTML", "CSS"],
+  },
+];
