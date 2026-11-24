@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiArrowDown, HiDownload, HiMail } from "react-icons/hi";
-import profileImage from "@/img/profile.jpg";
+import profileImage from "@/assets/img/profile.jpg";
 import { Button } from "@/components/ui/Button";
 import { profile } from "@/data/profile";
 import { getResumeForLocale } from "@/data/resumes";
