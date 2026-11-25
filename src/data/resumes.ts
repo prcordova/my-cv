@@ -1,5 +1,5 @@
-import resumePt from "@/assets/Pedro-Cordova-Curriculo-PT.pdf";
-import resumeEn from "@/assets/Pedro-Cordova-Resume-EN.pdf";
+import resumePt from "@/assets/resumes/Pedro-Cordova-Curriculo-PT.pdf";
+import resumeEn from "@/assets/resumes/Pedro-Cordova-Resume-EN.pdf";
 
 export const resumes = {
   en: {
