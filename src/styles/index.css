@@ -5,6 +5,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Keep scrollbar track always present — prevents horizontal jump on modal open */
+    overflow-y: scroll;
     scrollbar-gutter: stable;
     scrollbar-width: thin;
     scrollbar-color: theme("colors.accent.soft") theme("colors.ink.950");
@@ -12,15 +14,6 @@
 
   body {
     @apply bg-ink-50 font-sans text-ink-900 antialiased dark:bg-ink-950 dark:text-ink-100;
-  }
-
-  html[data-scroll-locked],
-  html[data-scroll-locked] body {
-    overflow: hidden;
-  }
-
-  html[data-scroll-locked] body {
-    padding-right: var(--removed-body-scroll-bar-size, 0px);
   }
 
   /* WebKit scrollbar — dark track + teal thumb */

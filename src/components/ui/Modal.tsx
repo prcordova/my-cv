@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { HiX } from "react-icons/hi";
+import { lockBodyScroll, unlockBodyScroll } from "@/lib/scrollLock";
 
 interface ModalProps {
   open: boolean;
@@ -8,22 +9,6 @@ interface ModalProps {
   description?: string;
   onClose: () => void;
   children: ReactNode;
-}
-
-function lockBodyScroll() {
-  const scrollbarWidth =
-    window.innerWidth - document.documentElement.clientWidth;
-
-  document.documentElement.style.setProperty(
-    "--removed-body-scroll-bar-size",
-    `${scrollbarWidth}px`,
-  );
-  document.documentElement.dataset.scrollLocked = "true";
-}
-
-function unlockBodyScroll() {
-  document.documentElement.removeAttribute("data-scroll-locked");
-  document.documentElement.style.removeProperty("--removed-body-scroll-bar-size");
 }
 
 export function Modal({ open, title, description, onClose, children }: ModalProps) {
