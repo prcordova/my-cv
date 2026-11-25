@@ -5,10 +5,46 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: theme("colors.accent.soft") theme("colors.ink.950");
   }
 
   body {
     @apply bg-ink-50 font-sans text-ink-900 antialiased dark:bg-ink-950 dark:text-ink-100;
+  }
+
+  html[data-scroll-locked],
+  html[data-scroll-locked] body {
+    overflow: hidden;
+  }
+
+  html[data-scroll-locked] body {
+    padding-right: var(--removed-body-scroll-bar-size, 0px);
+  }
+
+  /* WebKit scrollbar — dark track + teal thumb */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #141412;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #0d9488;
+    border-radius: 999px;
+    border: 2px solid #141412;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: #14b8a6;
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: #141412;
   }
 
   ::selection {

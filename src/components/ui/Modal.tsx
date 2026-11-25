@@ -10,6 +10,22 @@ interface ModalProps {
   children: ReactNode;
 }
 
+function lockBodyScroll() {
+  const scrollbarWidth =
+    window.innerWidth - document.documentElement.clientWidth;
+
+  document.documentElement.style.setProperty(
+    "--removed-body-scroll-bar-size",
+    `${scrollbarWidth}px`,
+  );
+  document.documentElement.dataset.scrollLocked = "true";
+}
+
+function unlockBodyScroll() {
+  document.documentElement.removeAttribute("data-scroll-locked");
+  document.documentElement.style.removeProperty("--removed-body-scroll-bar-size");
+}
+
 export function Modal({ open, title, description, onClose, children }: ModalProps) {
   const { t } = useTranslation();
   const titleId = useId();
@@ -19,8 +35,7 @@ export function Modal({ open, title, description, onClose, children }: ModalProp
   useEffect(() => {
     if (!open) return;
 
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    lockBodyScroll();
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
@@ -30,7 +45,7 @@ export function Modal({ open, title, description, onClose, children }: ModalProp
     dialogRef.current?.focus();
 
     return () => {
-      document.body.style.overflow = previousOverflow;
+      unlockBodyScroll();
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [open, onClose]);
