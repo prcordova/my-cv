@@ -1,14 +1,16 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiDownload, HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 import { Button } from "@/components/ui/Button";
+import { ResumeDownloadModal } from "@/components/ui/ResumeDownloadModal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { profile } from "@/data/profile";
-import { resumes } from "@/data/resumes";
 
 export function Contact() {
   const { t, i18n } = useTranslation();
   const isPt = i18n.language.startsWith("pt");
+  const [resumeModalOpen, setResumeModalOpen] = useState(false);
 
   return (
     <section
@@ -96,26 +98,22 @@ export function Contact() {
               {t("contact.email")}
             </Button>
             <Button
-              href={resumes.en.href}
-              download={resumes.en.fileName}
-              variant={isPt ? "ghost" : "secondary"}
+              type="button"
+              variant="ghost"
               className="w-full"
+              onClick={() => setResumeModalOpen(true)}
             >
               <HiDownload />
-              {t("contact.resumeEn")}
-            </Button>
-            <Button
-              href={resumes.pt.href}
-              download={resumes.pt.fileName}
-              variant={isPt ? "secondary" : "ghost"}
-              className="w-full"
-            >
-              <HiDownload />
-              {t("contact.resumePt")}
+              {t("contact.downloadResume")}
             </Button>
           </div>
         </div>
       </div>
+
+      <ResumeDownloadModal
+        open={resumeModalOpen}
+        onClose={() => setResumeModalOpen(false)}
+      />
     </section>
   );
 }

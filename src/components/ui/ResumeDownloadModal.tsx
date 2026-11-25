@@ -41,9 +41,6 @@ export function ResumeDownloadModal({ open, onClose }: ResumeDownloadModalProps)
           <HiDownload />
           {t("resumeModal.portuguese")}
         </Button>
-        <Button type="button" variant="ghost" className="w-full" onClick={onClose}>
-          {t("resumeModal.cancel")}
-        </Button>
       </div>
     </Modal>
   );

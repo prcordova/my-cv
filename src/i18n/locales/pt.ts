@@ -100,7 +100,6 @@ export const pt = {
       description: "Escolha a versão no idioma mais adequado à oportunidade.",
       english: "Versão em inglês",
       portuguese: "Versão em português",
-      cancel: "Cancelar",
     },
     footer: {
       rights: "Construído com React, TypeScript e Tailwind CSS.",
