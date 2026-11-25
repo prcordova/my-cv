@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiArrowDown, HiDownload, HiMail } from "react-icons/hi";
 import profileImage from "@/assets/img/profile.jpg";
 import { Button } from "@/components/ui/Button";
+import { ProfileTiltCard } from "@/components/ui/ProfileTiltCard";
 import { ResumeDownloadModal } from "@/components/ui/ResumeDownloadModal";
 import { profile } from "@/data/profile";
 
@@ -15,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="grid-atmosphere relative overflow-hidden border-b border-ink-200/70 dark:border-ink-800"
+      className="grid-atmosphere relative overflow-x-clip border-b border-ink-200/70 dark:border-ink-800"
     >
       <div className="section-shell grid items-center gap-10 pb-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:pb-10">
         <div className="animate-fade-up min-w-0">
@@ -77,14 +78,10 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="animate-fade-in relative mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none">
-          <div className="absolute -inset-4 rounded-[2rem] bg-accent/10 blur-2xl" aria-hidden />
-          <img
+        <div className="animate-fade-in relative mx-auto w-full max-w-sm px-1 py-4 sm:max-w-md lg:max-w-none">
+          <ProfileTiltCard
             src={profileImage}
             alt={`${profile.name} — Senior Frontend Engineer`}
-            className="relative aspect-[4/5] w-full rounded-[1.75rem] object-cover shadow-soft ring-1 ring-ink-200 dark:ring-ink-700"
-            width={640}
-            height={800}
           />
         </div>
       </div>
