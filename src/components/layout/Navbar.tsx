@@ -54,7 +54,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={toggleLanguage}
-            className="rounded-md border border-ink-200 px-2.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-ink-700 transition hover:border-ink-400 dark:border-ink-700 dark:text-ink-200"
+            className="inline-flex size-9 items-center justify-center rounded-md border border-ink-200 text-xs font-semibold uppercase tracking-wide text-ink-700 transition hover:border-ink-400 dark:border-ink-700 dark:text-ink-200"
             aria-label={t("a11y.toggleLanguage")}
           >
             {isPt ? "EN" : "PT"}
@@ -62,14 +62,14 @@ export function Navbar() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="rounded-md border border-ink-200 p-2 text-ink-700 transition hover:border-ink-400 dark:border-ink-700 dark:text-ink-200"
+            className="inline-flex size-9 items-center justify-center rounded-md border border-ink-200 text-ink-700 transition hover:border-ink-400 dark:border-ink-700 dark:text-ink-200"
             aria-label={t("a11y.toggleTheme")}
           >
             {theme === "dark" ? <HiOutlineSun size={18} /> : <HiOutlineMoon size={18} />}
           </button>
           <button
             type="button"
-            className="rounded-md border border-ink-200 p-2 text-ink-700 lg:hidden dark:border-ink-700 dark:text-ink-200"
+            className="inline-flex size-9 items-center justify-center rounded-md border border-ink-200 text-ink-700 lg:hidden dark:border-ink-700 dark:text-ink-200"
             onClick={() => setOpen((value) => !value)}
             aria-expanded={open}
             aria-label={open ? t("a11y.closeMenu") : t("a11y.openMenu")}

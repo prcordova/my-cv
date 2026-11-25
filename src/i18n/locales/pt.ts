@@ -92,9 +92,15 @@ export const pt = {
       phone: "Telefone",
       linkedin: "LinkedIn",
       github: "GitHub",
-      resumeEn: "Resume (EN)",
-      resumePt: "Currículo (PT)",
+      downloadResume: "Baixar currículo",
       cta: "Vamos conversar sobre o próximo desafio frontend.",
+    },
+    resumeModal: {
+      title: "Baixar currículo",
+      description: "Escolha a versão no idioma mais adequado à oportunidade.",
+      english: "Versão em inglês",
+      portuguese: "Versão em português",
+      cancel: "Cancelar",
     },
     footer: {
       rights: "Construído com React, TypeScript e Tailwind CSS.",
@@ -105,6 +111,7 @@ export const pt = {
       toggleLanguage: "Alternar idioma",
       openMenu: "Abrir menu",
       closeMenu: "Fechar menu",
+      closeModal: "Fechar diálogo",
     },
   },
 } as const;

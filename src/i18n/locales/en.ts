@@ -91,9 +91,15 @@ export const en = {
       phone: "Phone",
       linkedin: "LinkedIn",
       github: "GitHub",
-      resumeEn: "Resume (EN)",
-      resumePt: "Currículo (PT)",
+      downloadResume: "Download Resume",
       cta: "Let's talk about your next frontend challenge.",
+    },
+    resumeModal: {
+      title: "Download resume",
+      description: "Choose the language version that fits the opportunity.",
+      english: "English version",
+      portuguese: "Portuguese version",
+      cancel: "Cancel",
     },
     footer: {
       rights: "Built with React, TypeScript and Tailwind CSS.",
@@ -104,6 +110,7 @@ export const en = {
       toggleLanguage: "Toggle language",
       openMenu: "Open menu",
       closeMenu: "Close menu",
+      closeModal: "Close dialog",
     },
   },
 } as const;

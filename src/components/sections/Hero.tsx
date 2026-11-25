@@ -1,15 +1,16 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiArrowDown, HiDownload, HiMail } from "react-icons/hi";
 import profileImage from "@/assets/img/profile.jpg";
 import { Button } from "@/components/ui/Button";
+import { ResumeDownloadModal } from "@/components/ui/ResumeDownloadModal";
 import { profile } from "@/data/profile";
-import { getResumeForLocale } from "@/data/resumes";
 
 export function Hero() {
   const { t, i18n } = useTranslation();
   const isPt = i18n.language.startsWith("pt");
-  const resume = getResumeForLocale(i18n.language);
+  const [resumeModalOpen, setResumeModalOpen] = useState(false);
 
   return (
     <section
@@ -31,13 +32,12 @@ export function Hero() {
             {t("hero.summary")}
           </p>
 
-          {/* Primary actions only — avoid 4 equal-weight buttons */}
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Button
-              href={resume.href}
-              download={resume.fileName}
+              type="button"
               variant="primary"
               className="w-full sm:w-auto"
+              onClick={() => setResumeModalOpen(true)}
             >
               <HiDownload />
               {t("hero.downloadResume")}
@@ -89,7 +89,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll cue — sits on the hero divider, not competing with CTAs */}
       <div className="flex justify-center pb-6 md:pb-8">
         <a
           href="#experience"
@@ -102,6 +101,11 @@ export function Hero() {
           />
         </a>
       </div>
+
+      <ResumeDownloadModal
+        open={resumeModalOpen}
+        onClose={() => setResumeModalOpen(false)}
+      />
     </section>
   );
 }
